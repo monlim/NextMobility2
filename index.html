@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NextMobility</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="appstyle.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.31/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js"></script>
+  </head>
+  <body>
+    <!-- 
+    <div id="warning">
+      <h1 style="font-weight: 500">
+        <button id="loadButton">Load</button>
+      </h1>
+    </div> -->
+    <div class="container">
+      <video class="input_video"></video>
+      <canvas class="output_canvas" width="1800px" height="1080px"></canvas>
+    </div>
+    <div id="content" style="display: none">
+      <table width="100%">
+        <tr>
+          <td>
+            <textarea
+              id="phraseDiv"
+              .mode
+              placeholder="Type text here then press enter."
+              style="color: #0000ff"
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- Speech SDK reference sdk. -->
+    <script src="https://aka.ms/csspeech/jsbrowserpackageraw"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
